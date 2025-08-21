@@ -1,12 +1,14 @@
-// app/api/products/[id]/route.ts
-import { NextResponse } from 'next/server';
-import { products } from '@/data/products'; // Adjust path if needed
+// app/api/products/[id]/route.ts (Corrected code)
+import { NextResponse, type NextRequest } from 'next/server';
+import { products } from '@/data/products';
 
 export async function GET(
-  request: Request,
+  request: NextRequest,
   { params }: { params: { id: string } }
 ) {
-  const product = products.find(p => p.id === params.id);
+  const productId = params.id;
+  const product = products.find(p => p.id === productId);
+
   if (!product) {
     return NextResponse.json({ error: 'Product not found' }, { status: 404 });
   }
