@@ -1,8 +1,8 @@
-// app/products/[id]/page.tsx
-import Navbar from "@/components/Navbar";
+// app/producjs/[id]/page.jsx
+import Navbar from "@/componenjs/Navbar";
 
 async function getProduct(id: string) {
-  const res = await fetch(`http://localhost:3000/api/products/${id}`, { cache: 'no-store' });
+  const res = await fetch(`http://localhost:3000/api/producjs/${id}`, { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch product');
   }

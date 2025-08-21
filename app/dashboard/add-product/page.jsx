@@ -1,4 +1,3 @@
-// app/dashboard/add-product/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -11,7 +10,7 @@ export default function AddProductPage() {
   const [price, setPrice] = useState("");
   const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!name || !description || !price) {
@@ -38,6 +37,7 @@ export default function AddProductPage() {
     }
   };
 
+  // ... (the rest of the JSX for the form is the same)
   return (
     <div>
       <Navbar />

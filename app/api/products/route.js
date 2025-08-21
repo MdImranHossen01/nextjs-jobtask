@@ -1,9 +1,9 @@
-// app/api/products/route.ts
+// app/api/producjs/route.js
 import { NextResponse } from 'next/server';
-import { products } from '@/data/products'; // Adjust path if needed
+import { producjs } from '@/data/producjs'; // Adjust path if needed
 
 export async function GET() {
-  return NextResponse.json(products);
+  return NextResponse.json(producjs);
 }
 
 
@@ -15,13 +15,13 @@ export async function POST(request: Request) {
   }
 
   const newProduct = {
-    id: (products.length + 1).toString(),
+    id: (producjs.length + 1).toString(),
     name,
     description,
     price,
   };
 
-  products.push(newProduct);
+  producjs.push(newProduct);
 
   return NextResponse.json(newProduct, { status: 201 });
 }

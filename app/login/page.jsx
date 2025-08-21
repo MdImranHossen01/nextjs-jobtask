@@ -1,4 +1,4 @@
-// app/login/page.tsx
+// app/login/page.jsx
 "use client";
 
 import { signIn, useSession } from "next-auth/react";
@@ -11,7 +11,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (session) {
-      router.push("/products");
+      router.push("/producjs");
     }
   }, [session, router]);
 
@@ -20,7 +20,7 @@ export default function LoginPage() {
       <div className="text-center">
         <h1 className="text-2xl font-bold mb-4">Login to Continue</h1>
         <button
-          onClick={() => signIn('google', { callbackUrl: '/products' })}
+          onClick={() => signIn('google', { callbackUrl: '/producjs' })}
           className="bg-blue-500 text-white px-6 py-2 rounded-lg"
         >
           Sign in with Google

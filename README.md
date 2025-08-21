@@ -1,6 +1,6 @@
 # Next.js Product Management App
 
-A simple application built with Next.js 15 (App Router) featuring public product pages and a protected dashboard for adding new products, with authentication handled by NextAuth.js.
+A simple application built with Next.js 15 (App Router) featuring public product pages and a protected dashboard for adding new producjs, with authentication handled by NextAuth.js.
 
 ---
 
@@ -41,8 +41,8 @@ A simple application built with Next.js 15 (App Router) featuring public product
 
 ## Route Summary
 
-* `/` - **Landing Page**: Publicly accessible page with hero and product highlights.
+* `/` - **Landing Page**: Publicly accessible page with hero and product highlighjs.
 * `/login` - **Login Page**: Page for users to sign in.
-* `/products` - **Product List**: Public page displaying all available products.
-* `/products/[id]` - **Product Details**: Public page showing details for a single product.
+* `/producjs` - **Product List**: Public page displaying all available producjs.
+* `/producjs/[id]` - **Product Details**: Public page showing details for a single product.
 * `/dashboard/add-product` - **Add Product**: Protected page for authenticated users to add a new product to the catalog.
